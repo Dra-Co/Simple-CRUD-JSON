@@ -15,7 +15,7 @@
             }
         }
         $datas[$dataName] = ["complete" => false];
-        file_put_contents('data.json', json_encode($datas), JSON_PRETTY_PRINT);
+        file_put_contents('data.json', json_encode($datas));
     } ?>
     <?php header('Location: index.php');
     ?>
