@@ -9,5 +9,5 @@ if ($_POST['data_name']) {
         unset($datas[$data]);
     }
 }
-file_put_contents('data.json', json_encode($datas), JSON_PRETTY_PRINT);
+file_put_contents('data.json', json_encode($datas));
 header("Location: index.php");
