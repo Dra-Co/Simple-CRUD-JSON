@@ -22,7 +22,7 @@ if ($newName) {
         $keys = array_keys($datas);
         $keys[array_search($oldName, $keys)] = $newName;
         $datas = array_combine($keys, $datas);
-        file_put_contents('data.json', json_encode($datas), JSON_PRETTY_PRINT);
+        file_put_contents('data.json', json_encode($datas));
     }
 }
 header('Location: index.php');
